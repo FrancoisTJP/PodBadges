@@ -1,0 +1,51 @@
+
+
+.podbadges-liste img {
+    width:4em;
+    margin-top: 2em;
+    padding-right:.2em;
+    transition: transform .2s;
+}
+
+.podbadges-liste li {
+    display: inline-block;
+}
+
+.podbadges-liste img:hover{transform:scale(1.2)}
+
+.podbadges-tooltip {
+position: relative;
+display: inline-block;
+}
+
+.podbadges-tooltip .podbadges-tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: white;
+color: #999;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+left: 50%;
+top:-4px;
+margin-left: -60px;
+font: caption;
+}
+
+.podbadges-tooltip .podbadges-tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #e2e3e9 transparent transparent transparent;
+}
+
+.podbadges-tooltip:hover .podbadges-tooltiptext {
+visibility: visible;
+box-shadow:0 1px 2px #e2e3e9
+}
